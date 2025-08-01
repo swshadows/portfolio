@@ -1,0 +1,187 @@
+@use "sass:color";
+
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+$primary_color: #7e2fb3;
+$secondary_color: #e7ce3f;
+$link_color: #adc2fc;
+$i_color: #ffffff;
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Consolas", monospace;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+a {
+	color: $link_color;
+	text-decoration: none;
+	transition: 0.1s all;
+	&:hover {
+		color: color.adjust($link_color, $lightness: 10%);
+	}
+}
+
+.bcol {
+	font-weight: bold;
+	color: var(--col, $secondary_color);
+}
+
+html {
+	background: url("/portfolio/assets/bg.svg");
+}
+
+body {
+	height: 100vh;
+	background-color: #00000066;
+	display: grid;
+	grid-template-rows: 5% 1fr 5%;
+}
+
+#main-header,
+#main-app,
+#main-footer {
+	height: 100%;
+	padding: 5px 10px;
+}
+
+#main-header,
+#main-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	background-color: #0c0c0c;
+	* {
+		color: #eee;
+	}
+}
+
+#main-app {
+	height: 100%;
+	backdrop-filter: blur(10px);
+	overflow: auto;
+}
+
+#main-header {
+	.brand {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		.icon {
+			width: 40px;
+		}
+	}
+	.sections {
+		display: flex;
+		gap: 10px;
+		button {
+			padding: 5px 10px;
+			border-radius: 7px;
+			background-color: $primary_color;
+			border: none;
+			cursor: pointer;
+			transition: 0.2s all;
+			&:hover {
+				background-color: color.adjust($primary_color, $lightness: 10%);
+			}
+		}
+	}
+}
+
+#main-app {
+	#profile-pic {
+		margin: 10px auto;
+		display: block;
+		width: 250px;
+		border-radius: 100%;
+		transition: 0.2s all;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+	#my-age {
+		all: inherit;
+	}
+	h1 {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		justify-content: center;
+		color: #eee;
+		text-shadow: 2px 2px 0 $primary_color;
+		font-size: 2rem;
+	}
+	h2 {
+		color: #ccc;
+		font-size: 1.7rem;
+		text-align: center;
+	}
+	h3 {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+	.content {
+		width: 90%;
+		margin: 10px auto;
+		text-align: justify;
+		color: #eee;
+	}
+	.about-info,
+	.stack-info,
+	.project-info {
+		margin: 10px auto;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 10px;
+	}
+	.stack-info {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 5px;
+		h3 {
+			flex-basis: 100%;
+		}
+		h3:not(:nth-child(1)) {
+			margin-top: 15px;
+		}
+	}
+	.project-info {
+		width: 80%;
+		h3 {
+			color: $secondary_color;
+		}
+		ul {
+			width: 100%;
+		}
+		i {
+			color: $i_color;
+			font-size: 10px;
+			margin-right: 5px;
+		}
+	}
+	.contact-info {
+		margin: 0 auto;
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		.row {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
+#main-footer {
+	#me {
+		color: $primary_color;
+		&:hover {
+			color: color.adjust($primary_color, $lightness: 10%);
+		}
+	}
+}

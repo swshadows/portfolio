@@ -1,0 +1,59 @@
+{
+	"Itch.io": [
+		{
+			"name": "The Necromancer",
+			"url": "https://swshadows.itch.io/necromancer",
+			"desc": " Jogo criado para uma Gamejam de um curso com o tema de \"Os inimigos serão seus aliados\", com Gamemaker2 e conhecimento básico de desenvolvimento de jogos"
+		}
+	],
+	"Designs": [
+		{
+			"name": "reccon",
+			"url": "https://www.figma.com/file/BfEmE4YiZ0DSRzPSP4g5Kw/reccon?node-id=0%3A1",
+			"desc": " Protótipo do projeto Reccon"
+		},
+		{
+			"name": "t2d",
+			"url": "https://www.figma.com/file/CDndKafGEFGguqoAbOHAy6/t2d?node-id=0%3A1&t=ZxIrImgrAFWXWLW1-1",
+			"desc": " Protótipo do projeto T2D"
+		},
+		{
+			"name": "ui-petshop-simple",
+			"url": "https://www.figma.com/file/wOailcfTNhpRTAiNpkuzG9/ui-petshop-simple?node-id=2%3A8",
+			"desc": " Protótipo de petshop simples para matéria da faculdade"
+		}
+	],
+	"Github": [
+		{
+			"name": "Calend",
+			"url": "https://github.com/swshadows/calend",
+			"desc": " Aplicação de calendário com consumo da API Holid"
+		},
+		{
+			"name": "Devnotes",
+			"url": "https://github.com/swshadows/devnotes",
+			"desc": " Uma aplicação bloco de notas para devs"
+		},
+		{ "name": "Do-tos", "url": "https://github.com/swshadows/do-tos", "desc": " Uma lista de tarefas carismática" },
+		{
+			"name": "Holid",
+			"url": "https://github.com/swshadows/holid",
+			"desc": " Uma API de feriados e datas comemorativas"
+		},
+		{
+			"name": "Reccon",
+			"url": "https://github.com/swshadows/reccon",
+			"desc": " Aplicação Web de conexão de catadores com doadores para reciclagem de materiais"
+		},
+		{
+			"name": "T2D",
+			"url": "https://github.com/swshadows/t2d",
+			"desc": " Aplicação web para gerenciamento de projetos colaborativos"
+		},
+		{
+			"name": "What's on Stock",
+			"url": "https://github.com/swshadows/whats-on-stock",
+			"desc": " Aplicação de gerenciamento de estoque"
+		}
+	]
+}

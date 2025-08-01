@@ -1,0 +1,17 @@
+{
+	"Linguagens, Frameworks, etc.": [
+		"html",
+		"css",
+		"sass",
+		"bootstrap",
+		"tailwind",
+		"javascript",
+		"typescript",
+		"nodejs",
+		"vuejs",
+		"php",
+		"python"
+	],
+	"Bancos de Dados": ["sqlite", "mariadb"],
+	"Ferramentas": ["vscode", "dbeaver", "yaak", "git", "github", "docker"]
+}
