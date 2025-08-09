@@ -30,12 +30,15 @@ a {
 }
 
 html {
-	background: url("/portfolio/assets/bg.svg");
+	background-image: url("/portfolio/assets/bg.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 body {
 	height: 100vh;
-	background-color: #00000066;
+	background-color: #0000009f;
 	display: grid;
 	grid-template-rows: 5% 1fr 5%;
 }
@@ -62,7 +65,7 @@ body {
 #main-app {
 	height: 100%;
 	backdrop-filter: blur(10px);
-	overflow: auto;
+	overflow-y: auto;
 }
 
 #main-header {
@@ -138,6 +141,9 @@ body {
 		flex-direction: column;
 		gap: 10px;
 	}
+	.about-info p {
+		text-align: center;
+	}
 	.stack-info {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -166,7 +172,7 @@ body {
 	}
 	.contact-info {
 		margin: 0 auto;
-		width: 40%;
+		width: 70%;
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
@@ -183,5 +189,20 @@ body {
 		&:hover {
 			color: color.adjust($primary_color, $lightness: 10%);
 		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	* {
+		font-size: 12px;
+	}
+	#main-header {
+		justify-content: center;
+	}
+	#main-app #profile-pic {
+		width: 50%;
+	}
+	#main-header .sections {
+		display: none;
 	}
 }
